@@ -1,5 +1,6 @@
 %define		modname htmlcorrector
 Summary:	Drupal HTML corrector
+Summary(pl):	Modu³ poprawiaj±cy HTML dla Drupala
 Name:		drupal-mod-%{modname}
 Version:	4.6.0
 Release:	0.1
@@ -23,6 +24,14 @@ up a list of open tags and closes them when needed.
 
 Note that it does not validate the document according to the HTML
 specifications, but merely ensures that any tags are properly nested.
+
+%description -l pl
+To jest modu³ poprawiaj±cy HTML. Filtr przeszukuje wej¶cie, tworzy
+listê otwartych znaczników i zamyka je tam, gdzie trzeba.
+
+Nale¿y zauwa¿yæ, ¿e ten modu³ nie sprawdza poprawno¶ci dokumentu
+wzglêdem specyfikacji HTML, a jedynie upewnia siê, ¿e wszystkie
+znaczniki s± poprawnie zagnie¿d¿one.
 
 %prep
 %setup -q -n %{modname}
